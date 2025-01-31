@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+
+
+
+
+body.lock-scroll{
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.hamburger {
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	transition: all 0.25s;
+	position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+	position: absolute;
+	width: 24px;
+	height: 2px;
+	top: 0;
+	left: 0;
+	background: #fff;
+	transform: rotate(0);
+	transition: all 0.5s;
+}
+
+.hamburger-middle {
+	transform: translateY(7px);
+
+}
+
+.hamburger-bottom {
+	transform: translateY(14px);
+	
+}
+
+.open {
+	transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+	transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+	display: none;
+}
+
+.open .hamburger-bottom {
+	transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.flameContainer{width: 60px;
+	height: 60px;
+	transform-origin: center bottom;
+	animation: flicker 3ms 200ms ease-in infinite alternate;
+	z-index:-1;
+	}
+	.flame{bottom: 0;
+	position: absolute;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius:  50%;
+	border-top-left-radius: 50%;
+	transform: rotate(-45deg) scale(1.5, 1.5);
+	}
+	.yellow{left: 11px;
+	width: 60px;
+	height: 60px;
+	/* background: gold; */
+	background: #FFE84B;
+	/* box-shadow: 0px 0px 18px 8px
+	gold; */
+	box-shadow: 0px 0px 18px 8px
+	#FFE84B;
+	}
+	.orange{left: 8px;
+	width: 80px;
+	height: 80px;
+	/* background-color: orange;
+	box-shadow: 0px 0px 18px 8px orange; */
+	background-color: #0FFFB7;
+	box-shadow: 0px 0px 18px 8px #0FFFB7;
+	}
+	.red{left: 3px;
+	width: 100px;
+	height: 100px;
+	/* background: orangered;
+	box-shadow: 0px 0px 10px 8px orangered; */
+	background: #327DFF;
+	box-shadow: 0px 0px 10px 8px #327DFF;
+	}
+	.white{
+		left: 17px;
+	bottom: -4px;
+	width: 60px;
+	height: 60px;
+	background: white;
+	box-shadow: 0px 0px 18px 8px white;
+	
+	}
+	.circle{border-radius: 50%;
+	position: absolute;
+	}
+	.blue{width: 20px;
+	height: 20px;
+	left: 40px;
+	bottom: -40px;
+	background: #00071b;
+	}
+	.black{width: 80px;
+	height: 80px;
+	left: 9px;
+	bottom: -100px;
+	background: #00071d;
+	box-shadow: 0px 0px 30px 20px
+	#00071d;
+	}
+	@keyframes flicker
+	{0%{transform: rotate(-1deg);}
+	20%{transform: rotate(1deg);}
+	40%{transform: rotate(-1deg);}
+	60%{transform: rotate(1deg)
+		scaleY(1.04);}
+	80%{transform: rotate(-2deg)
+		scaleY(0.92);}
+	100%{transform: rotate(1deg);}}
+
+
+	@media (max-width: 768px) {
+		.flameContainer{width: 60px;
+			height: 60px;
+			transform-origin: center bottom;
+			animation: flicker 3ms 200ms ease-in infinite alternate;
+			z-index:-1;
+			/* overflow:hidden; */
+			}
+			.flame{bottom: 0;
+			position:  absolute;
+			border-bottom-right-radius: 50%;
+			border-bottom-left-radius:  50%;
+			border-top-left-radius: 50%;
+			transform: rotate(-45deg) scale(1.5, 1.5);
+			}
+			.yellow{left: -55px;
+			width: 180px;
+			height: 180px;
+			background: #FFE84B;
+			box-shadow: 0px 0px 54px 24px
+			#FFE84B;
+			}
+			.orange{left: -80px;
+			width: 240px;
+			height: 240px;
+			background-color: #0FFFB7;
+			box-shadow: 0px 0px 54px 24px #0FFFB7;
+			}
+			.red{left: -117px;
+			width: 300px;
+			height: 300px;
+			background: #327DFF;
+			box-shadow: 0px 0px 90px 72px #327DFF;
+			}
+			.white{
+				left: -53px;
+			bottom: -40px;
+			width: 180px;
+			height: 180px;
+			background: white;
+			box-shadow: 0px 0px 54px 24px white;   
+			
+			}
+			.circle{border-radius: 50%;
+			position: absolute;
+			}
+			.blue{width: 70px;
+			height: 80px;
+			left: 5px;
+			bottom: -160px;
+			background: slateblue;
+			}
+			.black{width: 240px;
+			height: 240px;
+			left: -85px;
+			bottom: -310px;
+			background: black;
+			box-shadow: 0px 0px 90px 60px
+			black;
+			}
+	}
