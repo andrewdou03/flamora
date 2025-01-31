@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="output.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+	<script defer src="output.js"></script>
+	<title>Solutions</title>
+</head>
+<body class="bg-[#00071d] font-main text-white w-full">
+	<div id="menu" class="absolute top-0 bottom-0 left-0 flex flex-col self-end hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black bg-opacity-95 z-10">
+		<a href="index.html" class="hover:text-primary font-inter">Home</a>
+		<!-- <a href="#" class="hover:text-primary font-inter">About Us</a> -->
+		<!-- <a href="#" class="hover:text-primary font-inter">Solutions</a> -->
+		<a href="#" class="hover:text-primary font-inter">Our Work</a>
+	</div>
+	<div class="relative overflow-hidden" id="wrapper">
+		<nav class="flex justify-between items-center px-4 max-w-full  h-[64px]">
+			<div class="font-main text-2xl text-primary px-4">flamora</div>
+		
+			<ul class="hidden md:flex md:space-x-8 text-body font-main justify-center">
+				<li><a href="index.html" class="hover:border-b border-primary nav-link">Home</a></li>
+				<!-- <li><a href="#" class="hover:border-b border-primary">About Us</a></li> -->
+				<!-- <li><a href="solutions.html" class="hover:border-b border-primary nav-link">Solutions</a></li> -->
+				<li><a href="#" class="hover:border-b border-primary">Our Work</a></li>
+			</ul>
+
+			<button class="hidden md:block px-4 py-[6px] bg-primary  rounded-md text-black hover:scale-95 ">Get Started</button>
+
+			<div class="py-[6px] md:hidden">
+				<button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+					<span class="hamburger-top"></span>
+					<span class="hamburger-middle"></span>
+					<span class="hamburger-bottom"></span>
+				</button>
+			</div>
+		</nav>
+
+
+		
+
+		<section class="h-[800px] flex items-center justify-center md:justify-start px-16">
+			<div class="flameContainer absolute top-[425px] self-center md:right-32 md:left-auto md:opacity-80 opacity-25">
+				<div class="red flame"></div>
+				<div class="orange flame"></div>
+				<div class="yellow flame"></div>
+				<div class="white flame"></div>
+				<div class="blue flame"></div>
+				<div class="black circle"></div>
+			</div>
+			<container class="absolute top-32 md:top-64 flex flex-col gap-6 w-[320px] md:w-[560px] text-center md:text-left items-center md:items-start">
+				<h1 class="text-heading leading-tight">Lorem ipsum dolor sit amet.</h1>
+				<p class="text-body font-inter leading-loose">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad labore dicta minima voluptatibus, qui voluptates eos excepturi! Debitis, soluta!.</p>
+			</container>
+		</section>
+
+		<section id="info" class="h-[500px] flex-col items-center md:justify-start px-16 text-center md:text-left">
+			<h2 class="text-subhead">Identity Matters.</h2>
+			<br><br>
+			<p class="text-body leading-loose font-inter">How do you attract customers? Obtain and retain top-tier talent? Convince investors to invest?</p>
+			<br><br>
+			<p class="text-body leading-loose font-inter">Your <strong class=text-primary>brand</strong>. Your <strong class="text-secondary">story</strong>.</p>
+			<br><br>
+			<p class="text-body leading-loose font-inter">Most companies don't get this right. This is why they fail.</p>
+		</section>
+
+		<div class="md:hidden flameContainer absolute top-[1425px] left-[-50%] md:right-32 md:left-auto md:opacity-80 opacity-25">
+			<div class="red flame"></div>
+			<div class="orange flame"></div>
+			<div class="yellow flame"></div>
+			<div class="white flame"></div>
+			<div class="blue flame"></div>
+			<div class="black circle"></div>
+		</div>
+
+		<section id="sell" class="md:h-[600px] px-16 text-center md:text-left">
+			<h2 class="text-subhead">Our Solutions</h2>
+			<br><br><p class="text-body font-inter leading-loose">We work closely with our clients to develop what we believe to be the three key pillars of successful storytelling.</p>
+			<div class="mx-auto flex-cll md:flex justify-between my-8 text-center">
+				<div class="flex flex-col items-center py-10 px-4">
+					<i class="fas fa-book-open text-4xl"></i>
+					<strong class="text-body font-inter text-secondary leading-loose">What's your story...</strong>
+					<p class="text-body font-inter leading-loose">and why does it matter?</p>
+				</div>
+				<div class="flex flex-col items-center  py-10 px-4">
+					<i class="fas fa-people-group text-4xl"></i>
+					<strong class="text-body font-inter text-secondary leading-loose">Who do you tell it to...</strong>
+					<p class="text-body font-inter leading-loose">and why should they care?</p>
+				</div>
+				<div class="flex flex-col items-center  py-10">
+					<i class="fas fa-microphone-lines text-4xl"></i>
+					<strong class="text-body font-inter text-secondary px-4 leading-loose">How do you tell it...</strong>
+					<p class="text-body font-inter leading-loose">and how does it make people feel?</p>
+				</div>
+			</div>
+
+			<button class="px-8 py-4 md:py-[12px] md:px-[24px] bg-primary  rounded-md text-black font-inter hover:scale-95">Learn More</button>
+
+		</section>
+			<div class="md:hidden flameContainer absolute top-[2400px] right-[-45%] md:right-32 md:left-auto md:opacity-80 opacity-25">
+				<div class="red flame"></div>
+				<div class="orange flame"></div>
+				<div class="yellow flame"></div>
+				<div class="white flame"></div>
+				<div class="blue flame"></div>
+				<div class="black circle"></div>
+			</div>
+		<section id="contact" class="h-[800px] flex-col items-center md:justify-start px-16 md:mt-0 mt-20 pt-10">
+			<h2 class="text-subhead text-center md:text-left">Contact Us</h2>
+			<form action="" class="flex flex-col gap-4 w-full font-inter">
+				<input type="text" placeholder="Name" class="input bg-black bg-transparent border-b border-white  px-1 py-2 focus:outline-none focus:border-secondary"/>
+				<input type="email" placeholder="Email" class="input bg-black bg-transparent border-b border-white  px-1 py-2 focus:outline-none focus:border-secondary"/>
+				<input type="text" placeholder="Subject" class="input bg-black bg-transparent border-b border-white  px-1 py-2 focus:outline-none focus:border-secondary"/>
+				<textarea name="" id="" cols="30" rows="5" placeholder="Message" class="input bg-black bg-transparent border border-white  px-1 py-2 rounded-md focus:outline-none focus:border-secondary"></textarea>
+				<button class="px-4 py-4 md:py-[12px] md:px-[24px] bg-primary  rounded-md text-black font-inter hover:scale-95">Submit</button>
+		</section>
+
+	</div>
+</body>
+</html>
